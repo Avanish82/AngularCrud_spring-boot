@@ -1,0 +1,89 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+    <ul class = "navbar-nav">
+
+        <li class = "nav-item">
+            <a routerLink="employees" routerLinkActive="active" class="nav-link" >Employee List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-employee" routerLinkActive="active" class="nav-link" >Add Employee</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="registrationlist" routerLinkActive="active" class="nav-link" >Registration List</a>
+        </li>
+    </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class = "nav-item">
+                <a routerLink="login" routerLinkActive="active" class="nav-link" >SignIn</a>
+            </li>
+            <li class = "nav-item">
+                <a routerLink="registration" routerLinkActive="active" class="nav-link" >SignUp</a>
+            </li>
+            <!-- <li class = "nav-item">
+                <a routerLink="registrationdetails" routerLinkActive="active" class="nav-link" >registrationdetails</a>
+            </li>
+            <li class = "nav-item">
+                <a routerLink="registrationupdate" routerLinkActive="active" class="nav-link" >RegistrationUpdate</a>
+            </li>-->
+        </ul>
+    
+</nav>
+
+<!-- <h1 class="text-center"> {{title}} </h1> -->
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
+<footer class = "footer">
+    <div class = "container">
+        <span>All Rights Reserved 2024</span>
+    </div>
+</footer>
+
+<!-- condition based nav show -->
+   <!-- @if (!isLoggedIn) {
+        <ul class="navbar-nav ml-auto">
+            <li class = "nav-item">
+                <a routerLink="login" routerLinkActive="active" class="nav-link" >SignIn</a>
+            </li>
+            <li class = "nav-item">
+                <a routerLink="registration" routerLinkActive="active" class="nav-link" >SignUp</a>
+            </li>
+        </ul>
+      } @else {
+        <ul class="navbar-nav ml-auto">
+            <li class = "nav-item">
+                <a routerLink="employees" routerLinkActive="active" class="nav-link" >Employee List</a>
+            </li>
+            <li class = "nav-item">
+                <a routerLink="create-employee" routerLinkActive="active" class="nav-link" >Add Employee</a>
+            </li>
+        </ul>
+      } -->
+
+<!-- working code  -->
+<!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="employees" routerLinkActive="active" class="nav-link" >Employee List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-employee" routerLinkActive="active" class="nav-link" >Add Employee</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="login" routerLinkActive="active" class="nav-link" >SignIn</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="registration" routerLinkActive="active" class="nav-link" >SignUp</a>
+        </li>
+    </ul>
+</nav>
+
+ 
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
+<footer class = "footer">
+    <div class = "container">
+        <span>All Rights Reserved 2024</span>
+    </div>
+</footer> -->
